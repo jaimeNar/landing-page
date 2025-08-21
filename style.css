@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +7,8 @@
 
 body {
     font-family: Roboto;
+    display: flex;
+    flex-direction: column;
 }
 
 header, footer {
@@ -13,41 +16,68 @@ header, footer {
     color: #E5E7EB;
 }
 
-header {
+main {
+    padding: 50px 0 20px 0;
     display: flex;
     flex-direction: column;
+    /*align-items: center;*/
+}
+
+header {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .top {
+    width: 950px;
     display: flex;
-    justify-content: space-around;
-}
-
-.hero {
-    display: flex;
-    justify-content: space-around;
-}
-
-.hero .left-block {
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-
-.hero .main {
-    font-size: 48px;
-    color: #F9FAF8;
-    font-weight: 900;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
     font-size: 24px;
     color: #F9FAF8;
+    margin-right: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
 }
 
 nav,
-.hero .secondary {
+.secondary {
     font-size: 18px;
     color: #E5E7EB;
+    /*display: flex;
+    /*gap: 12px;*/
+}
+
+.hero {
+    padding: 100px 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.left-block {
+    width: 450px;
+    flex-direction: column;
+}
+
+.left-block .main {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+    padding-bottom: 5px;
+}
+
+.secondary {
+    padding-bottom: 5px;
 }
 
 nav a {
@@ -56,9 +86,43 @@ nav a {
     text-decoration: none;
 }
 
-.hero .right-block {
+.right-block {
+    width: 450px;
     padding: 20px;
     background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.first .title {
+    text-align: center;
+    padding-bottom: 40px;;
+}
+
+.first .texts {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border: 4px solid rgb(0, 183, 255);
+    border-radius: 25px;
+}
+
+.first-text {
+    width: 150px;
+    text-align: center;
 }
 
 .second {
@@ -67,29 +131,61 @@ nav a {
     font-style: italic;
     font-weight: 300;
     color: #1F2937;
+    padding: 120px 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+}
+
+.Thor-quote {
+    width: 815px;
+    text-align: left;
+    quotes: none;
 }
 
 .second .author {
     font-weight: bold;
-    align-self: flex-end;
+    text-align: right;
 }
 
 .third {
-    padding: 5% 10%;
+    padding: 3% 0;
+    display: flex;
+    justify-content: center;
 }
 
 button, .call-activity {
     background-color: #3882F6;
-    padding: .4em 1.8em;
+    padding: .7em 2.5em;
     border-color: none;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: 9px;
     color: #F9FAF8;
 }
 
-.call-activity {
-    padding: 1% 2%;
+button {
+    font-size: 15px;
+    font-weight: 900;
+}
 
+.call-activity {
+    width: 1050px;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.call-activity button {
+    border: 1px solid white;
+}
+
+.call-activity .text .high {
+    font-size: 22px;
+    font-weight: 900;
+}
+footer {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
